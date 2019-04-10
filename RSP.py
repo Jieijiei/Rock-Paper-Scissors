@@ -10,14 +10,14 @@ for i in range(10):
     user = int(User)
     judge = (com + 3 - user) % 3
     if judge == 0:
-        print("あいこ。")
-        Even + 1
+        print("あいこです。")
+        Even += 1
     if judge == 1:
         print("あなたの負け！")
-        userLose + 1
+        userLose += 1
     if judge == 2:
         print("あなたの勝ち！！")
-        userVictory + 1
-print(userLose)
-print(userVictory)
-print(Even)
+        userVictory += 1
+print("あなたの勝った回数は" + str(userVictory) + "回です。")
+print("あなたの負けた回数は" + str(userLose) + "回です。")
+print("あなたがあいこした回数は" + str(Even) + "回です。")
